@@ -1,4 +1,4 @@
-import { Container, Text, Button } from '@mantine/core';
+import { Container, Text, Button, Flex } from '@mantine/core';
 
 interface PageIntroProps {
   title: string;
@@ -7,10 +7,13 @@ interface PageIntroProps {
 
 export default function PageIntro({ title, description }: PageIntroProps) {
   return (
-    <Container size="lg">
-      <Text component="h1" size="xl">{title}</Text>
-      <Text size="md">{description}</Text>
-      <Button>Get started</Button>
+    <Container size="sm" className="page-intro-container">
+      <Flex direction="column" justify="center" align="center" gap="md">
+
+        <Text ta="center" component="h1" size="xl">{title}</Text>
+        <Text ta="center" size="md">{description}</Text>
+        <Button>Get started</Button>
+      </Flex>
     </Container>
   );
 }

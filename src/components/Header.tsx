@@ -7,7 +7,7 @@ import {
   Text,
 } from '@mantine/core';
 import { IconBrightnessUp, IconMoonStars } from '@tabler/icons-react';
-import Logo from './Logo';
+import { CreditCard } from 'react-kawaii';
 
 export default function Header() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -15,8 +15,9 @@ export default function Header() {
   return (
     <Container size="lg" py="xs" px="md">
       <Flex justify="space-between" align="center">
-        <Flex align="center" gap="xs">
-          <Logo />
+        <Flex align="center">
+          {/* <Logo /> */}
+          <CreditCard size={40} mood="lovestruck" color="#c92a2a" />
           <Text size="lg" style={{ fontFamily: 'Winky Sans' }}>
             Doc Validator
           </Text>

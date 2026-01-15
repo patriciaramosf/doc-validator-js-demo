@@ -1,10 +1,14 @@
-import { MantineProvider, AppShell, Container, Flex } from '@mantine/core';
+import { MantineProvider, createTheme, AppShell, Container, Flex } from '@mantine/core';
 import Header from './components/Header';
 import PageIntro from './components/PageIntro';
 
+const theme = createTheme({
+  primaryColor: 'red',
+});
+
 export default function App() {
   return (
-    <MantineProvider defaultColorScheme="dark">
+    <MantineProvider theme={theme} defaultColorScheme="dark">
       <AppShell
         header={{ height: 60 }}
         padding="md"

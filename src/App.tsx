@@ -18,8 +18,10 @@ export default function App() {
 
         <AppShell.Main>
           <PageIntro
-            title="Bienvenido a mi app"
-            description="Este párrafo explica qué hace la app y cómo usarla."
+            title="Fast Document Validation"
+            description="Open-source JavaScript library
+            to quickly validate Spanish and Portuguese
+            documents (DNI, NIE, passports). More countries coming soon!"
           />
           <Container size="lg">
             Contenido

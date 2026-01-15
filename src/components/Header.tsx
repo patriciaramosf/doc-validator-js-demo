@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <Container size="lg" py="md">
       <Flex justify="space-between" align="center">
-        <Text>Logo</Text>
+        <Text>Logo Doc Validator</Text>
         <Flex gap="lg">
           <UnstyledButton size="sm">Get started</UnstyledButton>
           <ActionIcon

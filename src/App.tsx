@@ -1,20 +1,26 @@
-import { MantineProvider, Card, Text, Button, Container } from '@mantine/core';
+import { MantineProvider, AppShell, Container } from '@mantine/core';
+import Header from './components/Header';
 
-function App() {
+export default function App() {
   return (
-    <MantineProvider>
-      <Container size="md" style={{ paddingTop: 40 }}>
-        <Card shadow="sm" padding="lg">
-          <Text size="lg" style={{ marginBottom: 10 }}>
-            ¡Mantine funciona!
-          </Text>
-          <Button color="blue" fullWidth>
-            Haz clic
-          </Button>
-        </Card>
-      </Container>
+    <MantineProvider defaultColorScheme="dark">
+      <AppShell
+        header={{ height: 60 }}
+        padding="md"
+        styles={{
+          main: {},
+        }}
+      >
+        <AppShell.Header withBorder={true}>
+          <Header />
+        </AppShell.Header>
+
+        <AppShell.Main>
+          <Container size="lg">
+            Contenido
+          </Container>
+        </AppShell.Main>
+      </AppShell>
     </MantineProvider>
   );
 }
-
-export default App;

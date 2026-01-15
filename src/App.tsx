@@ -1,6 +1,7 @@
-import { MantineProvider, createTheme, AppShell, Container, Flex } from '@mantine/core';
+import { MantineProvider, createTheme, AppShell, Flex } from '@mantine/core';
 import Header from './components/Header';
 import PageIntro from './components/PageIntro';
+import Form  from './components/Form';
 
 const theme = createTheme({
   primaryColor: 'red',
@@ -28,9 +29,7 @@ export default function App() {
               to quickly validate Spanish and Portuguese
               documents (DNI, NIE, passports). More countries coming soon!"
             />
-            <Container size="lg">
-              Contenido
-            </Container>
+            <Form/>
           </Flex>
         </AppShell.Main>
       </AppShell>

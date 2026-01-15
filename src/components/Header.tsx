@@ -1,19 +1,21 @@
 import {
   Container,
   Flex,
-  Text,
   ActionIcon,
   UnstyledButton,
   useMantineColorScheme,
 } from '@mantine/core';
 import { IconBrightnessUp, IconMoonStars } from '@tabler/icons-react';
+import Logo from './Logo';
+
 export default function Header() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = colorScheme === 'dark';
   return (
     <Container size="lg" py="md">
       <Flex justify="space-between" align="center">
-        <Text>Logo Doc Validator</Text>
+        {/* <Image width={40} height={40} src={redDemon}/> */}
+        <Logo/>
         <Flex gap="lg">
           <UnstyledButton size="sm">Get started</UnstyledButton>
           <ActionIcon

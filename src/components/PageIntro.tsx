@@ -12,7 +12,11 @@ export default function PageIntro({ title, description }: PageIntroProps) {
 
         <Text ta="center" component="h1" size="xl">{title}</Text>
         <Text ta="center" size="md">{description}</Text>
-        <Button>Get started</Button>
+        <Button
+          component="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/patriciaramosf/doc-validator.js">Get started</Button>
       </Flex>
     </Container>
   );

@@ -1,5 +1,6 @@
 import { MantineProvider, AppShell, Container } from '@mantine/core';
 import Header from './components/Header';
+import PageIntro from './components/PageIntro';
 
 export default function App() {
   return (
@@ -16,6 +17,10 @@ export default function App() {
         </AppShell.Header>
 
         <AppShell.Main>
+          <PageIntro
+            title="Bienvenido a mi app"
+            description="Este párrafo explica qué hace la app y cómo usarla."
+          />
           <Container size="lg">
             Contenido
           </Container>

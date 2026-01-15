@@ -5,6 +5,8 @@ import PageIntro from './components/PageIntro';
 const theme = createTheme({
   primaryColor: 'red',
   primaryShade: 9,
+  fontFamily: 'Inter, sans-serif',
+  headings: { fontFamily: 'Winky Sans, sans-serif' },
 });
 
 export default function App() {

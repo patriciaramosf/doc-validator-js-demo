@@ -17,7 +17,7 @@ export default function Header() {
       <Flex justify="space-between" align="center">
         <Flex align="center" gap="xs">
           <Logo />
-          <Text fw={700} size="lg">
+          <Text size="lg" style={{ fontFamily: 'Winky Sans' }}>
             Doc Validator
           </Text>
         </Flex>

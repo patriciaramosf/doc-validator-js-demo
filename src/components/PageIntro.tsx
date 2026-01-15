@@ -10,7 +10,7 @@ export default function PageIntro({ title, description }: PageIntroProps) {
     <Container size="sm" className="page-intro-container">
       <Flex direction="column" justify="center" align="center" gap="md">
 
-        <Title ta="center" component="h1" size="xl">{title}</Title>
+        <Title ta="center" component="h1" size="34px">{title}</Title>
         <Text ta="center" size="md">{description}</Text>
         <Button
           component="a"

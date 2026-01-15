@@ -4,6 +4,7 @@ import PageIntro from './components/PageIntro';
 
 const theme = createTheme({
   primaryColor: 'red',
+  primaryShade: 9,
 });
 
 export default function App() {

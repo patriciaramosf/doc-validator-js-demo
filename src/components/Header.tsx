@@ -40,8 +40,8 @@ export default function Header() {
           >
             {
               dark ?
-                <IconMoonStars size={18} stroke={1.5} /> :
-                <IconBrightnessUp size={18} stroke={1.5} />}
+                <IconBrightnessUp size={18} stroke={1.5} /> :
+                <IconMoonStars size={18} stroke={1.5} />}
           </ActionIcon>
         </Flex>
       </Flex>

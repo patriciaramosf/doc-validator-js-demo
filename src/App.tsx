@@ -13,7 +13,7 @@ export default function App() {
   return (
     <MantineProvider theme={theme} defaultColorScheme="dark">
       <AppShell
-        header={{ height: 60 }}
+        header={{ height: 80 }}
         padding="md"
       >
         <AppShell.Header withBorder={true}>

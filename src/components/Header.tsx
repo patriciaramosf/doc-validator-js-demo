@@ -17,14 +17,21 @@ export default function Header() {
       <Flex justify="space-between" align="center">
         <Flex align="center">
           {/* <Logo /> */}
-          <CreditCard size={40} mood="lovestruck" color="#c92a2a" />
+          <CreditCard size={70} mood="lovestruck" color="#c92a2a" />
           <Text size="lg" style={{ fontFamily: 'Winky Sans' }}>
             Doc Validator
           </Text>
         </Flex>
 
         <Flex gap="lg">
-          <UnstyledButton size="sm">Get started</UnstyledButton>
+          <UnstyledButton
+            size="sm"
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/patriciaramosf/doc-validator.js/blob/main/README.md">
+              Get started
+          </UnstyledButton>
           <ActionIcon
             variant="light"
             color="gray"

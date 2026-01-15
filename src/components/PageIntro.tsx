@@ -16,7 +16,9 @@ export default function PageIntro({ title, description }: PageIntroProps) {
           component="a"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/patriciaramosf/doc-validator.js">Get started</Button>
+          href="https://github.com/patriciaramosf/doc-validator.js/blob/main/README.md">
+            Get started
+        </Button>
       </Flex>
     </Container>
   );

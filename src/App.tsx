@@ -1,4 +1,4 @@
-import { MantineProvider, createTheme, AppShell, Flex } from '@mantine/core';
+import { MantineProvider, createTheme, AppShell } from '@mantine/core';
 import Header from './components/Header';
 import PageIntro from './components/PageIntro';
 import Form  from './components/Form';
@@ -22,15 +22,13 @@ export default function App() {
         </AppShell.Header>
 
         <AppShell.Main>
-          <Flex direction="column" justify="center">
-            <PageIntro
-              title="Fast Document Validation"
-              description="Open-source JavaScript library
-              to quickly validate Spanish and Portuguese
-              documents (DNI, NIE, passports). More countries coming soon!"
-            />
-            <Form/>
-          </Flex>
+          <PageIntro
+            title="Fast Document Validation"
+            description="Open-source JavaScript library
+            to quickly validate Spanish and Portuguese
+            documents (DNI, NIE, passports). More countries coming soon!"
+          />
+          <Form/>
         </AppShell.Main>
       </AppShell>
     </MantineProvider>

@@ -15,7 +15,7 @@ export default function Form() {
   });
 
   return (
-    <Container className="form-container" p="xl">
+    <Container className="form-container" p="xl" size="lg">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
         <TextInput
           withAsterisk

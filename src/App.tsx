@@ -5,7 +5,7 @@ import Form  from './components/Form';
 
 const theme = createTheme({
   primaryColor: 'red',
-  primaryShade: 9,
+  primaryShade: 5,
   fontFamily: 'Inter, sans-serif',
   headings: { fontFamily: 'Winky Sans, sans-serif' },
 });

@@ -31,16 +31,14 @@ export default function Form() {
           <>
             <TextInput
               mt="md"
-              label="CC"
-              description="Portugal"
+              label="CC (Cartão de Cidadão)"
               placeholder="your@email.com"
               key={form.key('ptCC')}
               {...form.getInputProps('ptCC')}
             />
             <TextInput
               mt="md"
-              label="NIF"
-              description="Portugal"
+              label="NIF (Número de Identificação Fiscal)"
               placeholder="your@email.com"
               key={form.key('ptNIF')}
               {...form.getInputProps('ptNIF')}
@@ -51,24 +49,21 @@ export default function Form() {
           <>
             <TextInput
               mt="md"
-              label="DNI"
-              description="Spain"
+              label="DNI (Documento Nacional de Identidad)"
               placeholder="your@email.com"
               key={form.key('esDNI')}
               {...form.getInputProps('esDNI')}
             />
             <TextInput
               mt="md"
-              label="NIF"
-              description="Spain"
+              label="NIF (Número de Identificación Fiscal)"
               placeholder="your@email.com"
               key={form.key('esNIF')}
               {...form.getInputProps('esNIF')}
             />
             <TextInput
               mt="md"
-              label="NIE"
-              description="Spain"
+              label="NIE (Número de Identidad de Extranjero)"
               placeholder="your@email.com"
               key={form.key('esNIE')}
               {...form.getInputProps('esNIE')}
@@ -76,7 +71,6 @@ export default function Form() {
             <TextInput
               mt="md"
               label="Email"
-              description="Spain"
               placeholder="your@email.com"
               key={form.key('email')}
               {...form.getInputProps('email')}

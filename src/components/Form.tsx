@@ -20,6 +20,11 @@ export default function Form() {
 
     validate: {
       email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+      ptCC: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid CC'),
+      ptNIF: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid NIF'),
+      esDNI: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid DNI'),
+      esNIF: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid NIF'),
+      esNIE: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid NIE'),
     },
   });
 

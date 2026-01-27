@@ -7,6 +7,7 @@ import RadioGroupInput from './RadioGroupInput';
 export default function Form() {
   const form = useForm({
     mode: 'uncontrolled',
+    validateInputOnChange: true,
     initialValues: {
       email: '',
       ptCC: '',

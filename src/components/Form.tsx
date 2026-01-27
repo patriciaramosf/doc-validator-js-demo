@@ -19,11 +19,26 @@ export default function Form() {
     },
 
     validate: {
-      ptCC: (value) => (portugal.validateCC(value) ? null : 'Invalid CC'),
-      ptNIF: (value) => (portugal.validateNIF(value) ? null : 'Invalid NIF'),
-      esDNI: (value) => (spain.validateDNI(value) ? null : 'Invalid DNI'),
-      esNIF: (value) => (spain.validateNIF(value) ? null : 'Invalid NIF'),
-      esNIE: (value) => (spain.validateNIE(value) ? null : 'Invalid NIE'),
+      ptCC: (value) => {
+        if (!value) return null; // si está vacío, no validar
+        return portugal.validateCC(value) ? null : 'Invalid CC';
+      },
+      ptNIF: (value) => {
+        if (!value) return null;
+        return portugal.validateNIF(value) ? null : 'Invalid NIF';
+      },
+      esDNI: (value) => {
+        if (!value) return null;
+        return spain.validateDNI(value) ? null : 'Invalid DNI';
+      },
+      esNIF: (value) => {
+        if (!value) return null;
+        return spain.validateNIF(value) ? null : 'Invalid NIF';
+      },
+      esNIE: (value) => {
+        if (!value) return null;
+        return spain.validateNIE(value) ? null : 'Invalid NIE';
+      },
     },
   });
 

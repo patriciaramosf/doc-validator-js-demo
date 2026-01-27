@@ -3,13 +3,13 @@ import {
 } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import RadioGroupInput from './RadioGroupInput';
+import { portugal, spain } from 'doc-validator-js';
 
 export default function Form() {
   const form = useForm({
     mode: 'uncontrolled',
     validateInputOnChange: true,
     initialValues: {
-      email: '',
       ptCC: '',
       ptNIF: '',
       esDNI: '',
@@ -19,12 +19,11 @@ export default function Form() {
     },
 
     validate: {
-      email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
-      ptCC: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid CC'),
-      ptNIF: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid NIF'),
-      esDNI: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid DNI'),
-      esNIF: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid NIF'),
-      esNIE: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid NIE'),
+      ptCC: (value) => (portugal.validateCC(value) ? null : 'Invalid CC'),
+      ptNIF: (value) => (portugal.validateNIF(value) ? null : 'Invalid NIF'),
+      esDNI: (value) => (spain.validateDNI(value) ? null : 'Invalid DNI'),
+      esNIF: (value) => (spain.validateNIF(value) ? null : 'Invalid NIF'),
+      esNIE: (value) => (spain.validateNIE(value) ? null : 'Invalid NIE'),
     },
   });
 
@@ -73,13 +72,6 @@ export default function Form() {
               placeholder="your@email.com"
               key={form.key('esNIE')}
               {...form.getInputProps('esNIE')}
-            />
-            <TextInput
-              mt="md"
-              label="Email"
-              placeholder="your@email.com"
-              key={form.key('email')}
-              {...form.getInputProps('email')}
             />
           </>
         ) : null}

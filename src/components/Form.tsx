@@ -46,7 +46,10 @@ export default function Form() {
     <Container className="form-container" p="xl" size="lg">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
         <RadioGroupInput
-          value={form.values.country}  onChange={(val) => form.setFieldValue('country', val)}/>
+          value={form.values.country}  onChange={(value) => {
+            form.reset();
+            form.setFieldValue('country', value);
+          }}/>
         {form.values.country === 'pt' || form.values.country === 'all' ? (
           <>
             <TextInput

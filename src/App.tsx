@@ -4,8 +4,8 @@ import PageIntro from './components/PageIntro';
 import Form  from './components/Form';
 
 const theme = createTheme({
-  primaryColor: 'red',
-  primaryShade: 5,
+  primaryColor: 'cyan',
+  primaryShade: 4,
   fontFamily: 'Inter, sans-serif',
   headings: { fontFamily: 'Winky Sans, sans-serif' },
 });

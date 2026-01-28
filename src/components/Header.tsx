@@ -17,7 +17,7 @@ export default function Header() {
       <Flex justify="space-between" align="center">
         <Flex align="center">
           {/* <Logo /> */}
-          <CreditCard size={70} mood="lovestruck" color="#ff6b6b" />
+          <CreditCard size={70} mood="lovestruck" color="#3bc9db" />
           <Text size="lg" style={{ fontFamily: 'Winky Sans' }}>
             Doc Validator
           </Text>

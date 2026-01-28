@@ -1,5 +1,4 @@
-import {
-  Button, Group, TextInput, Container,
+import { TextInput, Container,
 } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import RadioGroupInput from './RadioGroupInput';
@@ -44,7 +43,7 @@ export default function Form() {
 
   return (
     <Container className="form-container" p="xl" size="lg">
-      <form onSubmit={form.onSubmit((values) => console.log(values))}>
+      <form>
         <RadioGroupInput
           value={form.values.country}  onChange={(value) => {
             form.reset();
@@ -93,9 +92,6 @@ export default function Form() {
             />
           </>
         ) : null}
-        <Group justify="flex-end" mt="md">
-          <Button type="submit">Submit</Button>
-        </Group>
       </form>
     </Container>
   );

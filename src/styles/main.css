@@ -10,3 +10,12 @@ body {
   height: 100%;
   flex: 1 1 100%
 }
+/* For light mode */
+:root[data-mantine-color-scheme="light"] {
+  --mantine-color-body: #F7F7F7 !important;
+}
+
+/* For dark mode */
+:root[data-mantine-color-scheme="dark"] {
+  --mantine-color-body: #282827 !important;
+}

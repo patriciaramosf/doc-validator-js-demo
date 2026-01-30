@@ -54,14 +54,14 @@ export default function Form() {
             <TextInput
               mt="md"
               label="CC (Cartão de Cidadão)"
-              placeholder="your@email.com"
+              placeholder="11111111"
               key={form.key('ptCC')}
               {...form.getInputProps('ptCC')}
             />
             <TextInput
               mt="md"
               label="NIF (Número de Identificação Fiscal)"
-              placeholder="your@email.com"
+              placeholder="123456789"
               key={form.key('ptNIF')}
               {...form.getInputProps('ptNIF')}
             />
@@ -72,21 +72,21 @@ export default function Form() {
             <TextInput
               mt="md"
               label="DNI (Documento Nacional de Identidad)"
-              placeholder="your@email.com"
+              placeholder="12345678A"
               key={form.key('esDNI')}
               {...form.getInputProps('esDNI')}
             />
             <TextInput
               mt="md"
               label="NIF (Número de Identificación Fiscal)"
-              placeholder="your@email.com"
+              placeholder="A1234567B"
               key={form.key('esNIF')}
               {...form.getInputProps('esNIF')}
             />
             <TextInput
               mt="md"
               label="NIE (Número de Identidad de Extranjero)"
-              placeholder="your@email.com"
+              placeholder="X1234567L"
               key={form.key('esNIE')}
               {...form.getInputProps('esNIE')}
             />
